@@ -1,0 +1,67 @@
+<!--
+  Generated template for the PrincipalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>INSPIRATION PORTFOLIO</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-grid>
+  <ion-row>
+     <ion-col col-12>Escolha o tipo de imagem que você quer ver</ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col col-12>
+            <ion-select [(ngModel)]="tema">
+              <ion-option *ngFor="let tema of temas" value={{tema.id}}>{{tema.nome}}</ion-option>
+            </ion-select>
+    </ion-col>
+    
+    <ion-col col-12>
+        <button ion-button (click)="procuraImagens()">Procurar</button>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row>
+      <ion-col col-12>Ou envie sua imagem preenchendo os campos abaixo:</ion-col>
+  </ion-row>
+  
+  <ion-row>
+      <ion-col col-12>
+        <ion-label>Tema</ion-label>
+        </ion-col>
+        <ion-col col-12>
+        <ion-select [(ngModel)]="tema_envio">
+          <ion-option *ngFor="let tema of temas" value={{tema.id}}>{{tema.nome}}</ion-option>
+        </ion-select>
+      </ion-col>
+ </ion-row>
+
+ <ion-row>
+      <ion-col col-12>
+
+          <ion-list>
+              <ion-item>
+                <ion-label>Link</ion-label>
+                <ion-input type="text" [(ngModel)]="link"></ion-input>
+    
+              </ion-item>
+            </ion-list>
+            </ion-col>
+      
+  </ion-row>
+  <ion-row>
+      <ion-col col-12>
+        <button ion-button color="primary" (click)="enviaImagem()">Enviar</button>
+      </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

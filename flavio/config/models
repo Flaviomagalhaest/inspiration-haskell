@@ -1,0 +1,29 @@
+Logon json
+    emailusuario        Text
+    senha        Text
+    UniqueEmailusuario  emailusuario
+    UsuarioLogon emailusuario senha
+    deriving Show
+
+Tema json
+    nome         Text
+    deriving Show
+
+TemaImagem json
+    temaid       TemaId
+    imagemid     ImagemId
+    deriving Show
+
+Imagem json
+    loginid      LogonId
+    link         Text
+    dtPostagem   Text
+    temaid       TemaId
+    deriving Show
+
+Curtida json
+    loginid      LogonId
+    imagemid     ImagemId
+    positivas    Int
+    negativas    Int
+    deriving Show

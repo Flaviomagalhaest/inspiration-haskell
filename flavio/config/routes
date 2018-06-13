@@ -1,0 +1,19 @@
+/static StaticR Static appStatic
+
+/favicon.ico FaviconR GET
+/robots.txt RobotsR GET
+
+/inspiration/logon CadastroR OPTIONS POST
+/inspirationcrialogon CriaLoginR OPTIONS POST
+/inspiration/buscalogon BuscaLogonR OPTIONS POST
+/inspiration/buscatemaporid/#TemaId TemaporidR OPTIONS GET
+/inspiration/buscatodostemas BuscaTemasR OPTIONS GET
+/inspiration/criartema CriaTemaR OPTIONS POST
+/inspiration/criarimagem CadImagensR OPTIONS POST
+/inspiration/criartemaimagem InsereTemaImagemR  OPTIONS POST
+/inspiration/buscatodasimagens BuscaTodasImagensR OPTIONS GET
+/inspiration/criacurtida InsereCurtidaR OPTIONS POST
+/inspiration/buscaimagemtema BuscaImagensPorTemaR OPTIONS POST
+/inspiration/buscacurtidaimagem BuscaCurtidaPorImagemR OPTIONS POST
+/inspiration/curtirimagem/#CurtidaId CurteImagemR OPTIONS PATCH
+/inspiration/descurtirimagem/#CurtidaId DescurteImagemR OPTIONS PATCH
